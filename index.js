@@ -30,7 +30,7 @@ app.use(
 app.use(authRouter); // Links up auth.js file router to app obj
 app.use(productsRouter); // Links up products.js file router to app
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
 	// 3000 is the port number
 	console.log('LISTENING');
 });
